@@ -7,7 +7,7 @@ var expect = chai.expect;
 require('../server');
 var fs = require('fs');
 
-describe('Vanilla HTTP server tests', () => {
+describe('HTTP-server simple persistence test', () => {
   describe('POST request made to "/messages"', () => {
     it('should respond to /messages with a JSON object with a key "name"', (done) => {
       request('localhost:3000')
